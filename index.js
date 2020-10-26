@@ -1,4 +1,4 @@
-const monk = document.getElementById('monk');
+const monk = document.querySelector('.monk');
 
 const toot1 = new Audio('./assets/toot1.mp3'),
 toot2 = new Audio('./assets/toot2.mp3'),
