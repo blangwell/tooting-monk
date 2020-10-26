@@ -35,12 +35,15 @@ function playSound() {
     count++;
     setTimeout(() => {
       monk.classList.remove('tooting');
-    }, 500)
+    }, 500);
 
   } else {
     monk.classList.add('accident');
     randomAccident.play();
     count = 0;
+    setTimeout(() => {
+      monk.classList.remove('accident')
+    }, 2000);
   }
 }
 
