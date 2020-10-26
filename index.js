@@ -21,7 +21,6 @@ tootAccident2 = './assets/toot_accident2.mp3';
 
 
 function playSound() {
-  console.log('play sound')
   let tootIndex = Math.floor(Math.random() * 10);
   let randomToot = tootArray[tootIndex];
   randomToot.play();
