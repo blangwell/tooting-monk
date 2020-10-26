@@ -10,7 +10,7 @@ An immature homage to the Shockwave/Flash browser distractions of the late ninet
 ## Process
 I started the project by gathering the sound assets. I found an excellent sound compilation via Creative Commons, downloaded it, and split it up into individual sound files via Audacity. 
 
-After the sound assets were added, I used Javascript to create new Audio objects for each sound and put the object variables into an array. I wrote the `playSound()` function to index an audio object at random and play the corresponding sound.
+After the sound assets were added, I used Javascript to create new Audio objects for each sound and put the object variables into an array. I wrote the `playSound()` function to index an Audio object at random and play the corresponding sound.
 
 ```js
 function playSound() {
