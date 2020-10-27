@@ -1,4 +1,5 @@
 const monk = document.querySelector('.monk');
+const instructions = document.querySelector('.instructions');
 
 const toot1 = new Audio('./assets/sounds/toot1.mp3'),
 toot2 = new Audio('./assets/sounds/toot2.mp3'),
@@ -18,10 +19,12 @@ let count = 0;
 
 function playSound() {
   let tootIndex = Math.floor(Math.random() * 10);
-  let countMax = Math.floor(Math.random() * 10) + 5
+  let countMax = Math.floor(Math.random() * 10) + 3
   let randomToot = tootArray[tootIndex];
 
   console.log(`count: ${count} countMax: ${countMax} tootIndex: ${tootIndex}`)
+  // instructions.style.display = 'none'; // hide instructions
+
 
   if (count < countMax) {
     monk.classList.add('tooting');
