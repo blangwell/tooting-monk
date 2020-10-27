@@ -14,6 +14,8 @@ toot10 = new Audio('./assets/sounds/toot10.mp3');
 const tootAccident = new Audio('./assets/sounds/toot_accident1.mp3');
 const tootArray = [toot1, toot2, toot3, toot4, toot5, toot6, toot7, toot8, toot9, toot10];
 
+const ambiance = new Audio('./assets/sounds/beautiful-birds-singing.mp3');
+
 let count = 0;
 
 function playSound() {
@@ -22,6 +24,9 @@ function playSound() {
   let randomToot = tootArray[tootIndex];
 
   console.log(`count: ${count} countMax: ${countMax} tootIndex: ${tootIndex}`)
+  ambiance.play()
+  ambiance.loop = true;
+  ambiance.volume = .5;
 
   if (count < countMax) {
     monk.classList.add('tooting');
@@ -32,6 +37,7 @@ function playSound() {
     }, 500);
 
   } else {
+    ambiance.pause();
     monk.classList.add('accident');
     tootAccident.play();
     count = 0;
