@@ -12,7 +12,6 @@ toot9 = new Audio('./assets/sounds/toot9.mp3'),
 toot10 = new Audio('./assets/sounds/toot10.mp3');
 
 const tootAccident = new Audio('./assets/sounds/toot_accident1.mp3');
-
 const tootArray = [toot1, toot2, toot3, toot4, toot5, toot6, toot7, toot8, toot9, toot10];
 
 let count = 0;
