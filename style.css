@@ -7,7 +7,8 @@ body {
 }
 
 .monk {
-  background-color: orange;
+  /* background-color: orange; */
+  background-image: url('./assets/img/monk1.png');
   width: 300px;
   height: 400px;
   position: absolute;
@@ -19,8 +20,10 @@ body {
   cursor: pointer;
 }
 .tooting {
-  background-color: burlywood;
+  /* background-color: burlywood; */
+  background-image: url('./assets/img/monk4.png');
 }
 .accident {
-  background-color: red;
+  background-image: url('./assets/img/monk5.png');
+
 }
