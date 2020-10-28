@@ -29,21 +29,21 @@ function playSound() {
   ambiance.volume = .5;
 
   if (count < countMax) {
+    count++;
     monk.classList.add('tooting');
     randomToot.play();
-    count++;
-    setTimeout(() => {
+    randomToot.onended = function() {
       monk.classList.remove('tooting');
-    }, 800);
+    };
 
   } else {
+    count = 0;
     ambiance.pause();
     monk.classList.add('accident');
     tootAccident.play();
-    count = 0;
-    setTimeout(() => {
+    tootAccident.onended = function() {
       monk.classList.remove('accident')
-    }, 2000);
+    }
   }
 }
 
