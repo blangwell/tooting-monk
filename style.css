@@ -23,5 +23,8 @@ body {
 }
 .accident {
   background-image: url('./assets/img/monk5.png');
+}
 
+#preload-images {
+  display: none;
 }
