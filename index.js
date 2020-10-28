@@ -34,7 +34,7 @@ function playSound() {
     count++;
     setTimeout(() => {
       monk.classList.remove('tooting');
-    }, 1000);
+    }, 800);
 
   } else {
     ambiance.pause();
