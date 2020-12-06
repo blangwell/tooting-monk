@@ -29,12 +29,14 @@ function playSound() {
   ambiance.volume = .5;
 
   if (count < countMax) {
-    count++;
-    monk.classList.add('tooting');
-    randomToot.play();
-    randomToot.onended = function() {
-      monk.classList.remove('tooting');
-    };
+    if (tootAccident.paused) {
+      count++;
+      monk.classList.add('tooting');
+      randomToot.play();
+      randomToot.onended = function() {
+        monk.classList.remove('tooting');
+      };
+    }
 
   } else {
     count = 0;
