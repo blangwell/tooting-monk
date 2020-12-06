@@ -23,7 +23,6 @@ function playSound() {
   let countMax = Math.floor(Math.random() * 10) + 3
   let randomToot = tootArray[tootIndex];
 
-  console.log(`count: ${count} countMax: ${countMax} tootIndex: ${tootIndex}`)
   ambiance.play()
   ambiance.loop = true;
   ambiance.volume = .5;
