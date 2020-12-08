@@ -25,7 +25,7 @@ function playSound() {
 
   ambiance.play()
   ambiance.loop = true;
-  ambiance.volume = .5;
+  ambiance.volume = 0.2;
 
   if (count < countMax) {
     if (tootAccident.paused) {
